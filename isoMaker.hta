@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<hta:application id="isoMaker" applicationname="isoMaker" minimizebutton="no" maximizebutton="no" selection="no" scroll="no" icon="imgs/icon.ico">
+		<title>ISO MAKER</title>
+		<script language="vbscript" src="isoMaker_code.vbs"></script>
+	</head>
+	<body onload="formInit()" style="background-color:#f5f6f7;">
+		<label style="font-family:Sans-Serif; font-size:13px">Captured from folder:</label></br>
+		<textarea id="selDir" rows="1" cols="40" readonly style="cursor:hand; margin-left:20px;" ondblclick="selectDir()">Double click to select captured folder</textarea></br>
+		<label style="font-family:Sans-Serif; font-size:13px">Save ISO file to:</label></br>
+		<textarea id="selIso" rows="1" cols="40" readonly style="cursor:hand; margin-left:20px;" ondblclick="saveIso()">Double click to save ISO file</textarea></br></br>
+		<center><button style="cursor:hand" onclick="makeIso()">Make ISO File</button></center>
+	</body>
+</html>
